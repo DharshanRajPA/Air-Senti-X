@@ -1,0 +1,40 @@
+2025-04-19 00:19:52,846 INFO: Cleaning dataset...
+2025-04-19 00:19:55,210 INFO: Splitting dataset and encoding labels...
+2025-04-19 00:19:55,222 INFO: Tokenizing text using BERT...
+2025-04-19 00:20:05,730 INFO: Number of classes: 3
+2025-04-19 00:20:16,468 INFO: Ensembling predictions...
+2025-04-19 00:21:43,356 INFO: Ensembling predictions...
+2025-04-19 00:23:51,840 INFO: Ensembling predictions...
+2025-04-19 00:27:24,259 WARNING: Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+2025-04-19 00:27:31,415 WARNING: Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+2025-04-19 00:27:37,982 WARNING: Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+2025-04-19 00:46:52,214 INFO: Low-confidence predictions: 185
+2025-04-19 00:46:55,311 INFO: Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.85      0.91      0.88      1811
+           1       0.68      0.52      0.59       617
+           2       0.74      0.76      0.75       458
+
+    accuracy                           0.80      2886
+   macro avg       0.76      0.73      0.74      2886
+weighted avg       0.80      0.80      0.80      2886
+
+2025-04-19 00:46:55,312 INFO: Confusion Matrix:
+[[1655  102   54]
+ [ 229  318   70]
+ [  66   46  346]]
+2025-04-19 00:49:45,075 WARNING: Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+2025-04-19 00:49:52,808 WARNING: Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+2025-04-19 00:49:59,410 WARNING: Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+2025-04-19 01:12:25,050 WARNING: Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+2025-04-19 01:12:31,348 WARNING: Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+2025-04-19 01:12:37,685 WARNING: Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+2025-04-19 01:13:25,524 INFO: Cleaning dataset...
+2025-04-19 01:13:26,412 INFO: Splitting dataset and encoding labels...
+2025-04-19 01:13:26,434 INFO: Tokenizing text using BERT...
+2025-04-19 01:13:33,653 INFO: Number of classes: 3
+2025-04-19 01:13:33,674 INFO: Building and training bert_lstm...
+2025-04-19 01:13:46,820 WARNING: Gradients do not exist for variables ['tf_bert_model_9/bert/pooler/dense/kernel:0', 'tf_bert_model_9/bert/pooler/dense/bias:0'] when minimizing the loss. If you're using `model.compile()`, did you forget to provide a `loss` argument?
+2025-04-19 01:45:44,019 ERROR: Error during ONNX conversion: name 'preds_lstm' is not defined
+2025-04-19 01:45:44,020 INFO: Training and ensemble evaluation complete.

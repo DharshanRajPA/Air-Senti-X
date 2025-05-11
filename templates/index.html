@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white dark:bg-gray-900">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Air-Senti-X</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../static/assets/css/style.css">
+  <script src="../static/assets/js/script.js"></script>
+  <script src="../static/assets/js/chart-setup.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="p-6 text-gray-900 dark:text-white">
+  <div class="max-w-2xl mx-auto space-y-6">
+    <div class="flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-center">Air-Senti-X</h1>
+    </div>
+
+    <textarea id="tweetInput" rows="3" placeholder="Enter tweet..."
+      class="w-full p-3 rounded border dark:bg-gray-800 dark:border-gray-600"></textarea>
+    <button id="analyzeBtn" class="w-full bg-blue-600 text-white py-2 px-4 rounded">Analyze</button>
+
+    <div id="loader" class="loader hidden mx-auto mt-6"></div>
+
+    <div id="resultSection" class="hidden space-y-4">
+      <div id="sentimentCard" class="p-4 bg-green-100 dark:bg-green-800 rounded shadow">
+        <p><strong>Sentiment:</strong> <span id="sentiment"></span></p>
+        <p><strong>Confidence:</strong> <span id="confidence"></span></p>
+      </div>
+      <canvas id="sentimentChart"></canvas>
+      <div id="loader" class="hidden">Loading...</div>
+      <div id="resultSection" class="hidden">
+        <p id="sentiment"></p>
+        <p id="confidence"></p>
+        <p id="tone"></p>
+        <p id="urgency"></p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
